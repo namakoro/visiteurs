@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Société X</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/logo-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <!-- Logo du site -->
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Acceuil</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Visiteurs <b class="caret"></b>
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/php/seltodvi1.php">Aujourd'hui</a></li>
+                            </ul>   
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <center> 
+                    <h1>Société X</h1>
+                    <h2>Formulaire des visiteurs</h2>
+<hr>                 
+<br>
+<br> 
+                    <form method="post" action="php/insert.php" >
+                        <table width="450px">
+                        </tr>
+                        <tr>
+                        <td>
+                            <label for="l_name">Nom</label>
+                        </td>
+                        <td>
+                            <input type="text" name="Nom" maxlength="50" size="30">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <label for="f_name">Prenom</label>  
+                        </td>
+                        <td>
+                          <input type="text" name="Prenom" maxlength="50" size="30">  
+                        </td>    
+                        </tr>
+                        <tr>
+                        <td>
+                            <label for="company">Nom de la societe</label>
+                        </td>
+                        <td>
+                            <input type="text" name="companyy" maxlength="50" size="30">
+                        </td>   
+                        </tr>
+                        <tr>
+                        <td>
+                            <label for="prof">Profession</label>
+                        </td>
+                        <td>
+                            <input type="text" name="Profession" maxlength="50" size="30">
+                        </td>   
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="number">Contact</label>  
+                        </td>
+                        <td>
+                          <input type="text" name="Numero" maxlength="50" size="30">  
+                        </td> 
+                        </tr>
+                        <tr>
+                           <td>
+                                <label for="v_object">Objet de la visite</label>  
+                        </td> 
+                        <td>
+                         <select name="Object">
+                             <option>Choisir</option>
+                             <option value="Entretien">Entretien</option>
+                             <option value="Reunion">Reunion</option>
+                             <option value="Rendez-vous">Rendez-vous</option>
+                             <option value="Paiement de Facture">Paiement de Facture</option>
+                             </option>
+                             <option value="Depot de Facture">Depot de facture</option>
+                             </option>
+                             <option value="Simple Visite">Simple visite</option>
+
+                         </select>   
+
+                        </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                <label for="observation">Observation</label>  
+                        </td> 
+                        <td>
+                         <select name="Observe">
+                             <option>Choisir</option>
+                             <option value="D.G">D.G</option>
+                             <option value="D.A.F">D.A.F</option>
+                             <option value="D.R.H">D.R.H</option>
+                             <option value="Comptable">COMPTA</option>
+                             </option>
+                             <option value="Responsable Commercial">Resp Commercial</option>
+                         </select>   
+                        </td> 
+                        </tr>    
+                        </table>
+<br>
+                        <input type="submit" value="Enregistrer" name="sub">
+                     </form>
+
+
+                </center>
+            
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/boot-drop-hover.js"></script>
+
+      <script>
+      //$('[data-toggle="dropdown"]').bootstrapDropdownHover();
+      $.fn.bootstrapDropdownHover();
+      //$('#dropdownMenu1').bootstrapDropdownHover();
+      //$('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover();
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
